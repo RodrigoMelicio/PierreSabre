@@ -19,7 +19,7 @@ public class Humains {
 		return qtargent;
 	}
 	
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println("(" + nom + ") - " + texte);	
 	}
 	
@@ -32,11 +32,11 @@ public class Humains {
 	}
 	
 	
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		qtargent += gain;
 	}
 	
-	private void perdreArgent(int gain) {
+	protected void perdreArgent(int gain) {
 		qtargent -= gain;
 		if (qtargent < 0) {
 			qtargent = 0;
